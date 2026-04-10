@@ -1,0 +1,64 @@
+/* 1. Scroll Reveal */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay Utils */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* 2. Ripple Effect */
+.ripple-btn {
+    position: relative;
+    overflow: hidden;
+}
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+}
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* 3. Mobile Menu */
+.mobile-menu-container.open {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.mobile-menu-container.open .menu-link {
+    animation: fadeInMenu 0.5s ease forwards;
+}
+
+.mobile-menu-container.open .menu-link:nth-child(1) { animation-delay: 0.1s; }
+.mobile-menu-container.open .menu-link:nth-child(2) { animation-delay: 0.2s; }
+.mobile-menu-container.open .menu-link:nth-child(3) { animation-delay: 0.3s; }
+.mobile-menu-container.open .menu-link:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInMenu {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
