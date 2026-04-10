@@ -1,7 +1,7 @@
 // Supabase Configuration
 // Cole aqui sua URL e Chave Pública Anon (encontradas em Project Settings > API no Supabase)
-const SUPABASE_URL = 'https://mmynmksrglojwcrupkqq.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable__0jcIsNfF9aYTSGgqIkkMA_hXTxy0QO';
+const SUPABASE_URL = 'COLOQUE_SUA_URL_AQUI';
+const SUPABASE_ANON_KEY = 'COLOQUE_SUA_CHAVE_AQUI';
 
 // Inicializa o cliente do Supabase
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
