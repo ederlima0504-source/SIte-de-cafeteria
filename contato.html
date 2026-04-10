@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato - Cafeteria da Vovó</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f3f0eb",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "background": "#fcf9f4",
+                    "on-primary-fixed-variant": "#5d4037",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffdbd0",
+                    "on-surface-variant": "#504441",
+                    "secondary-fixed": "#d4e9c5",
+                    "on-secondary-fixed-variant": "#3a4c31",
+                    "tertiary": "#581e00",
+                    "surface-container": "#f0ede8",
+                    "surface-variant": "#e5e2dd",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dcdad5",
+                    "inverse-primary": "#e7bdb1",
+                    "on-tertiary-fixed-variant": "#753413",
+                    "surface-bright": "#fcf9f4",
+                    "on-surface": "#1c1c19",
+                    "on-background": "#1c1c19",
+                    "outline": "#827470",
+                    "on-primary-container": "#d4ada1",
+                    "primary": "#442a22",
+                    "on-primary-fixed": "#2c160e",
+                    "primary-container": "#5d4037",
+                    "on-tertiary-fixed": "#360f00",
+                    "secondary-fixed-dim": "#b9cdaa",
+                    "on-secondary-fixed": "#101f09",
+                    "surface-container-highest": "#e5e2dd",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#fb9f75",
+                    "surface-container-low": "#f6f3ee",
+                    "surface-tint": "#77574d",
+                    "error": "#ba1a1a",
+                    "secondary": "#526447",
+                    "tertiary-fixed": "#ffdbcd",
+                    "secondary-container": "#d4e9c5",
+                    "outline-variant": "#d4c3be",
+                    "surface-container-high": "#ebe8e3",
+                    "on-secondary-container": "#576a4d",
+                    "tertiary-container": "#753413",
+                    "surface": "#fcf9f4",
+                    "primary-fixed-dim": "#e7bdb1",
+                    "inverse-surface": "#31302d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fcf9f4;
+            color: #1c1c19;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif', serif;
+        }
+        .coffee-gradient {
+            background: linear-gradient(45deg, #442a22 0%, #5d4037 100%);
+        }
+    </style>
+    <link rel="stylesheet" href="CSS/animations.css">
+</head>
+<body class="bg-surface-container-low text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 backdrop-blur-xl transition-all duration-300 shadow-[0_20px_40px_rgba(28,28,25,0.06)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Logo Cafeteria da Vovó" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7bi8qqn857FAs_7m8Y40L_2ACfPZgazcoQJ7Fjcjfi5MY9k7qPteoALZygTNOq-T3ymI5d4MltAgxj6Aa5MPW5qBGgGL1VFhJkqrRXt5lyHj8LdJ1BMakgYEWLzpUuMZP9_Q4aVHIpxKdf4bM7spMzADUxVDaj26TvByUpZneqi9fwbyjfSWgBZzVcNZWk6WMor8u3mJaVe8Ogws4F5HKJA66GXZCoMyOdUjBOxRusffnFQA_ilEPVSDxE8lYr1_BrXVhrv1ezbqX"/>
+<span class="text-2xl font-serif font-bold text-[#442a22] tracking-tight">Cafeteria da Vovó</span>
+</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-sans font-medium uppercase tracking-widest text-xs text-[#5d4037] hover:text-[#442a22] transition-colors hover:opacity-80 transition-all duration-300" href="index.html">Home</a>
+<a class="font-sans font-medium uppercase tracking-widest text-xs text-[#5d4037] hover:text-[#442a22] transition-colors hover:opacity-80 transition-all duration-300" href="menu.html">Menu</a>
+<a class="font-sans font-medium uppercase tracking-widest text-xs text-[#5d4037] hover:text-[#442a22] transition-colors hover:opacity-80 transition-all duration-300" href="sobre.html">Nossa História</a>
+<a class="font-sans font-medium uppercase tracking-widest text-xs text-[#581e00] border-b-2 border-[#581e00] pb-1" href="contato.html">Contato</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="active:scale-95 transition-transform hover:opacity-80 transition-all duration-300 text-[#442a22]">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+</button>
+<button class="md:hidden text-[#442a22]">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+
+<section class="py-32 px-8 min-h-screen flex items-center pt-40">
+<div class="max-w-4xl mx-auto w-full">
+    <div class="text-center mb-16 reveal-on-scroll delay-100">
+        <h1 class="text-5xl md:text-7xl font-serif text-primary mb-6 italic">Fale Conosco</h1>
+        <p class="text-on-surface-variant text-lg">Estamos ansiosos para receber sua mensagem ou visita!</p>
+    </div>
+    
+    <div class="bg-surface-container-lowest p-10 md:p-14 rounded-[2rem] shadow-2xl relative overflow-hidden reveal-on-scroll delay-200">
+        <div class="absolute -top-10 -right-10 w-48 h-48 bg-secondary-container rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+
+        <form id="contactForm" class="space-y-8 flex flex-col relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <label class="block text-sm font-bold text-primary mb-3">Seu Nome</label>
+                    <input id="name" class="w-full px-6 py-4 rounded-xl border border-outline-variant bg-surface focus:outline-none focus:border-tertiary focus:ring-2 focus:ring-tertiary/20 transition-all text-on-surface" placeholder="João Silva" type="text" required/>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-primary mb-3">Seu E-mail</label>
+                    <input id="email" class="w-full px-6 py-4 rounded-xl border border-outline-variant bg-surface focus:outline-none focus:border-tertiary focus:ring-2 focus:ring-tertiary/20 transition-all text-on-surface" placeholder="joao@email.com" type="email" required/>
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-bold text-primary mb-3">Sua Mensagem</label>
+                <textarea id="message" class="w-full px-6 py-4 rounded-xl border border-outline-variant bg-surface focus:outline-none focus:border-tertiary focus:ring-2 focus:ring-tertiary/20 transition-all text-on-surface h-40 resize-none" placeholder="Sua história, encomenda ou dúvida para a vovó..." required></textarea>
+            </div>
+            <button class="ripple-btn px-10 py-5 coffee-gradient text-on-primary rounded-full font-bold shadow-lg hover:shadow-xl hover:opacity-90 active:scale-95 transition-all w-full md:w-auto md:ml-auto text-lg flex items-center justify-center gap-3">
+                Enviar com Carinho
+                <span class="material-symbols-outlined font-light" data-icon="send">send</span>
+            </button>
+        </form>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#e5e2dd] dark:bg-[#2b2926] w-full py-12 px-8 border-t border-surface-variant mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto text-left">
+<div class="space-y-6">
+<span class="text-xl font-serif italic text-[#442a22] dark:text-[#fcf9f4]">Cafeteria da Vovó</span>
+<p class="font-sans text-sm leading-relaxed text-[#5d4037] dark:text-[#d4c3be]">
+                    Levando o sabor do interior para o seu dia a dia. Ingredientes locais, processos artesanais e muito amor em cada xícara.
+                </p>
+<div class="flex gap-4">
+<a class="text-[#5d4037] hover:text-[#581e00] transition-all" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="text-[#5d4037] hover:text-[#581e00] transition-all" href="#"><span class="material-symbols-outlined" data-icon="location_on">location_on</span></a>
+<a class="text-[#5d4037] hover:text-[#581e00] transition-all" href="#"><span class="material-symbols-outlined" data-icon="mail">mail</span></a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-serif text-lg text-[#442a22] dark:text-[#fcf9f4]">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-[#5d4037] dark:text-[#d4c3be] hover:text-[#581e00] dark:hover:text-[#ffffff] underline decoration-tertiary transition-all" href="contato.html">Contact Us</a></li>
+<li><a class="text-[#5d4037] dark:text-[#d4c3be] hover:text-[#581e00] dark:hover:text-[#ffffff] underline decoration-tertiary transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-[#5d4037] dark:text-[#d4c3be] hover:text-[#581e00] dark:hover:text-[#ffffff] underline decoration-tertiary transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-serif text-lg text-[#442a22] dark:text-[#fcf9f4]">Visite-nos</h4>
+<p class="font-sans text-sm leading-relaxed text-[#5d4037] dark:text-[#d4c3be]">
+                    Rua das Amendoeiras, 123<br/>
+                    Bairro das Flores, São Paulo - SP<br/><br/>
+                    Segunda a Sábado: 08h às 20h<br/>
+                    Domingos: 09h às 18h
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-[#442a22]/10 text-center">
+<p class="font-sans text-sm leading-relaxed text-[#5d4037] dark:text-[#d4c3be]">© 2024 Cafeteria da Vovó. Handcrafted with love.</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/animations.js"></script>
+</body></html>
